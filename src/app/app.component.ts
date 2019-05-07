@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RpgFightingSimulator';
+  red = '#c54';
+  currentMalus = 0;
+
+  setCurrentMalus(value : number) {
+    this.currentMalus += value;
+  }
 }
